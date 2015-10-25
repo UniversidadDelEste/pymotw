@@ -4,12 +4,15 @@ msgstr ""
 "Project-Id-Version: Python Module of the Week 2.1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-06 13:35-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2015-10-24 06:11-0300\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_AR\n"
+"X-Generator: Poedit 1.7.5\n"
 
 #: ../../PyMOTW/abc/index.rst:3
 msgid "abc -- Abstract Base Classes"
@@ -53,8 +56,8 @@ msgstr ""
 
 #: ../../PyMOTW/abc/index.rst:32
 msgid ""
-"Let's start by defining an abstract base class to represent the API of a set"
-" of plugins for saving and loading data."
+"Let's start by defining an abstract base class to represent the API of a "
+"set of plugins for saving and loading data."
 msgstr ""
 
 #: ../../PyMOTW/abc/index.rst:41
@@ -63,8 +66,8 @@ msgstr ""
 
 #: ../../PyMOTW/abc/index.rst:43
 msgid ""
-"There are two ways to indicate that a concrete class implements an abstract:"
-" register the class with the abc or subclass directly from the abc."
+"There are two ways to indicate that a concrete class implements an "
+"abstract: register the class with the abc or subclass directly from the abc."
 msgstr ""
 
 #: ../../PyMOTW/abc/index.rst:51
@@ -79,8 +82,8 @@ msgstr ""
 
 #: ../../PyMOTW/abc/index.rst:71
 msgid ""
-"By subclassing directly from the base, we can avoid the need to register the"
-" class explicitly."
+"By subclassing directly from the base, we can avoid the need to register "
+"the class explicitly."
 msgstr ""
 
 #: ../../PyMOTW/abc/index.rst:78
@@ -106,11 +109,10 @@ msgstr ""
 
 #: ../../PyMOTW/abc/index.rst:119
 msgid ""
-"Dr. André Roberge `has described "
-"<http://us.pycon.org/2009/conference/schedule/event/47/>`_ using this "
-"capability to discover plugins by importing all of the modules in a "
-"directory dynamically and then looking at the subclass list to find the "
-"implementation classes."
+"Dr. André Roberge `has described <http://us.pycon.org/2009/conference/"
+"schedule/event/47/>`_ using this capability to discover plugins by "
+"importing all of the modules in a directory dynamically and then looking at "
+"the subclass list to find the implementation classes."
 msgstr ""
 
 #: ../../PyMOTW/abc/index.rst:126
@@ -132,17 +134,17 @@ msgstr ""
 #: ../../PyMOTW/abc/index.rst:158
 msgid ""
 "Although a concrete class must provide an implementation of an abstract "
-"methods, the abstract base class can also provide an implementation that can"
-" be invoked via ``super()``.  This lets you re-use common logic by placing "
-"it in the base class, but force subclasses to provide an overriding method "
-"with (potentially) custom logic."
+"methods, the abstract base class can also provide an implementation that "
+"can be invoked via ``super()``.  This lets you re-use common logic by "
+"placing it in the base class, but force subclasses to provide an overriding "
+"method with (potentially) custom logic."
 msgstr ""
 
 #: ../../PyMOTW/abc/index.rst:169
 msgid ""
 "Since ``ABCWithConcreteImplementation`` is an abstract base class, it isn't "
-"possible to instantiate it to use it directly.  Subclasses *must* provide an"
-" override for ``retrieve_values()``, and in this case the concrete class "
+"possible to instantiate it to use it directly.  Subclasses *must* provide "
+"an override for ``retrieve_values()``, and in this case the concrete class "
 "massages the data before returning it at all."
 msgstr ""
 
@@ -159,8 +161,8 @@ msgstr ""
 
 #: ../../PyMOTW/abc/index.rst:202
 msgid ""
-"The ``Base`` class in the example cannot be instantiated because it has only"
-" an abstract version of the property getter method."
+"The ``Base`` class in the example cannot be instantiated because it has "
+"only an abstract version of the property getter method."
 msgstr ""
 
 #: ../../PyMOTW/abc/index.rst:219
@@ -287,8 +289,8 @@ msgid ""
 "classes when you import :mod:`collections`. This means you can safely use "
 "``isinstance()`` to check parameters in your code to ensure that they "
 "support the API you need.  The base classes can also be used to define your "
-"own collection types, since many of them provide concrete implementations of"
-" the internals and only need a few methods overridden.  Refer to the "
+"own collection types, since many of them provide concrete implementations "
+"of the internals and only need a few methods overridden.  Refer to the "
 "standard library docs for collections for more details."
 msgstr ""
 
@@ -314,8 +316,8 @@ msgstr ""
 
 #: ../../PyMOTW/abc/index.rst:326
 msgid ""
-"The collections module includes abstract base classes for several collection"
-" types."
+"The collections module includes abstract base classes for several "
+"collection types."
 msgstr ""
 
 #: ../../PyMOTW/abc/index.rst:329
@@ -336,8 +338,8 @@ msgstr ""
 
 #: ../../PyMOTW/abc/index.rst:335
 msgid ""
-"`Wikipedia: Strategy Pattern "
-"<http://en.wikipedia.org/wiki/Strategy_pattern>`_"
+"`Wikipedia: Strategy Pattern <http://en.wikipedia.org/wiki/"
+"Strategy_pattern>`_"
 msgstr ""
 
 #: ../../PyMOTW/abc/index.rst:335
@@ -346,8 +348,8 @@ msgstr ""
 
 #: ../../PyMOTW/abc/index.rst:337
 msgid ""
-"`Plugins and monkeypatching "
-"<http://us.pycon.org/2009/conference/schedule/event/47/>`_"
+"`Plugins and monkeypatching <http://us.pycon.org/2009/conference/schedule/"
+"event/47/>`_"
 msgstr ""
 
 #: ../../PyMOTW/abc/index.rst:338
