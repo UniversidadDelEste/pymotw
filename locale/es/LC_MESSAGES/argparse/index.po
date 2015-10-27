@@ -4,60 +4,80 @@ msgstr ""
 "Project-Id-Version: Python Module of the Week 2.1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-06 13:35-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2015-10-27 17:57-0300\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_AR\n"
+"X-Generator: Poedit 1.8.6\n"
 
 #: ../../PyMOTW/argparse/index.rst:3
 msgid "argparse -- Command line option and argument parsing."
-msgstr ""
+msgstr "argparse -- Opción de línea de comandos y el argumento de análisis."
 
 #: ../../PyMOTW/argparse/index.rst:8
 msgid "Command line option and argument parsing."
-msgstr ""
+msgstr "Opción de línea de comandos y el argumento de análisis."
 
 #: ../../PyMOTW/argparse/index.rst:9
 msgid "2.7 and later"
-msgstr ""
+msgstr "2.7 y posteriores"
 
 #: ../../PyMOTW/argparse/index.rst:11
 msgid ""
-"The :mod:`argparse` module was added to Python 2.7 as a replacement for "
-":mod:`optparse`.  The implementation of :mod:`argparse` supports features "
-"that would not have been easy to add to :mod:`optparse`, and that would have"
-" required backwards-incompatible API changes, so a new module was brought "
-"into the library instead.  :mod:`optparse` is still supported, but is not "
-"likely to receive new features."
+"The :mod:`argparse` module was added to Python 2.7 as a replacement for :"
+"mod:`optparse`.  The implementation of :mod:`argparse` supports features "
+"that would not have been easy to add to :mod:`optparse`, and that would "
+"have required backwards-incompatible API changes, so a new module was "
+"brought into the library instead.  :mod:`optparse` is still supported, but "
+"is not likely to receive new features."
 msgstr ""
+"El módulo :mod:`argparse` fue agregado a Python 2.7 como un reemplazo de :"
+"mod:`optparse`.  La implementación de :mod:`argparse` soporta "
+"características que no habrían sido fáciles de agregar a :mod:`optparse`, y "
+"que habría requerido cambios hacia atrás en la API incompatibles, por lo "
+"que el nuevo módulo fue añadido a la biblioteca en su lugar.  :mod:"
+"`optparse` sigue siendo soportado, pero es probable que no reciba nuevas "
+"características."
 
 #: ../../PyMOTW/argparse/index.rst:19
 msgid "Comparing with optparse"
-msgstr ""
+msgstr "Comparando con optparse"
 
 #: ../../PyMOTW/argparse/index.rst:21
 msgid ""
-"The API for :mod:`argparse` is similar to the one provided by "
-":mod:`optparse`, and in many cases :mod:`argparse` can be used as a "
-"straightforward replacement by updating the names of the classes and methods"
-" used.  There are a few places where direct compatibility could not be "
-"preserved as new features were added, however."
+"The API for :mod:`argparse` is similar to the one provided by :mod:"
+"`optparse`, and in many cases :mod:`argparse` can be used as a "
+"straightforward replacement by updating the names of the classes and "
+"methods used.  There are a few places where direct compatibility could not "
+"be preserved as new features were added, however."
 msgstr ""
+"La API de :mod:`argparse` es similar a la proporcionada por :mod:"
+"`optparse`, y en muchos casos :mod:`argparse` se puede utilizar como un "
+"reemplazo directo mediante la actualización de los nombres de las clases y "
+"los métodos utilizados.  Sin embargo, hay algunos lugares donde la "
+"compatibilidad directa no podía ser preservada como en las nuevas "
+"características."
 
 #: ../../PyMOTW/argparse/index.rst:27
 msgid ""
 "You will have to decide whether to upgrade existing programs on a case-by-"
-"case basis.  If you have written extra code to work around limitations of "
-":mod:`optparse`, you may want to upgrade to reduce the amount of code you "
+"case basis.  If you have written extra code to work around limitations of :"
+"mod:`optparse`, you may want to upgrade to reduce the amount of code you "
 "need to maintain.  New programs should probably use argparse, if it is "
 "available on all deployment platforms."
 msgstr ""
+"Usted tendrá que decidir si se debe actualizar los programas existentes en "
+"una base de caso por caso. Si usted ha escrito código extra para evitar "
+"limitaciones de: mod: `optparse`, es posible que desee actualizar a reducir "
+"la cantidad de código que necesita mantener."
 
 #: ../../PyMOTW/argparse/index.rst:34
 msgid "Setting up a Parser"
-msgstr ""
+msgstr "La creación de un Analizador"
 
 #: ../../PyMOTW/argparse/index.rst:36
 msgid ""
@@ -65,6 +85,10 @@ msgid ""
 "tell it what arguments to expect.  The parser can then be used to process "
 "the command line arguments when your program runs."
 msgstr ""
+"El primer paso cuando se utiliza: mod: `argparse` es crear un objeto de "
+"programa de análisis y decirle qué argumentos esperar. El analizador se "
+"puede utilizar para procesar los argumentos de la línea de comandos cuando "
+"el programa se ejecuta."
 
 #: ../../PyMOTW/argparse/index.rst:40
 msgid ""
@@ -72,34 +96,50 @@ msgid ""
 "arguments to set up the description used in the help text for the program "
 "and other global behaviors or settings."
 msgstr ""
+"La clase del analizador es :class: `ArgumentParser`. El constructor toma "
+"varios argumentos para establecer la descripción utilizada en el texto de "
+"ayuda para el programa y otros comportamientos o configuración global."
 
 #: ../../PyMOTW/argparse/index.rst:51
 msgid "Defining Arguments"
-msgstr ""
+msgstr "Definiendo argumentos"
 
 #: ../../PyMOTW/argparse/index.rst:53
 msgid ""
 ":mod:`argparse` is a complete argument *processing* library. Arguments can "
-"trigger different actions, specified by the *action* argument to "
-":func:`add_argument()`. Supported actions include storing the argument "
-"(singly, or as part of a list), storing a constant value when the argument "
-"is encountered (including special handling for true/false values for boolean"
-" switches), counting the number of times an argument is seen, and calling a "
+"trigger different actions, specified by the *action* argument to :func:"
+"`add_argument()`. Supported actions include storing the argument (singly, "
+"or as part of a list), storing a constant value when the argument is "
+"encountered (including special handling for true/false values for boolean "
+"switches), counting the number of times an argument is seen, and calling a "
 "callback."
 msgstr ""
+":mod:`argparse` es una librería completa de *procesado* de argumentos. Los "
+"argumentos pueden desencadenar diferentes acciones, especificada por el "
+"argumento *acción* de :func:`add_argument()`. Las acciones soportadas "
+"incluyen almacenar el argumento (individualmente, o como parte de una "
+"lista), almacenar un valor constante cuando se encuentra el argumento "
+"(incluyendo un tratamiento especial para los verdaderos valores / falso "
+"para interruptores booleanos), contando el número de veces que un argumento "
+"es visto, y llamando a una devolución de llamada."
 
 #: ../../PyMOTW/argparse/index.rst:61
 msgid ""
 "The default action is to store the argument value. In this case, if a type "
-"is provided, the value is converted to that type before it is stored. If the"
-" *dest* argument is provided, the value is saved to an attribute of that "
+"is provided, the value is converted to that type before it is stored. If "
+"the *dest* argument is provided, the value is saved to an attribute of that "
 "name on the Namespace object returned when the command line arguments are "
 "parsed."
 msgstr ""
+"La acción predeterminada es almacenar el valor del argumento. En este caso, "
+"si se proporciona un tipo, el valor se convierte a ese tipo antes de que se "
+"almacene. Si se proporciona el argumento *dest*, el valor se guarda en un "
+"atributo del mismo nombre en el objeto de espacio de nombres devueltos "
+"cuando se analizan los argumentos de la línea de comandos."
 
 #: ../../PyMOTW/argparse/index.rst:68
 msgid "Parsing a Command Line"
-msgstr ""
+msgstr "Analizar una línea de comandos"
 
 #: ../../PyMOTW/argparse/index.rst:70
 msgid ""
@@ -109,6 +149,12 @@ msgid ""
 "own list. The options are processed using the GNU/POSIX syntax, so option "
 "and argument values can be mixed in the sequence."
 msgstr ""
+"Una vez que todos los argumentos se definen, se puede analizar la línea de "
+"comandos mediante el paso de una secuencia de cadenas de argumentos a :"
+"func: `parse_args ()`. Por defecto, los argumentos son tomados de ``sys."
+"argv [1:] '', pero también puede pasar su propia lista. Las opciones se "
+"procesan utilizando la sintaxis de GNU / POSIX, por lo que los valores de "
+"opción y los argumentos se pueden mezclar en la secuencia."
 
 #: ../../PyMOTW/argparse/index.rst:76
 msgid ""
@@ -117,22 +163,31 @@ msgid ""
 "values as attributes, so if your argument ``dest`` is ``\"myoption\"``, you "
 "access the value as ``args.myoption``."
 msgstr ""
+"El valor de retorno de :func: `parse_args ()` es un :class: `Namespace` que "
+"contiene los argumentos para el comando. El objeto contiene los valores de "
+"los argumentos como atributos, así que si su argumento ``dest`` es ``"
+"\"myoption\"``, se accede al valor como ``args.myoption``."
 
 #: ../../PyMOTW/argparse/index.rst:82
 msgid "Simple Examples"
-msgstr ""
+msgstr "Ejemplos simples"
 
 #: ../../PyMOTW/argparse/index.rst:84
 msgid ""
-"Here is a simple example with 3 different options: a boolean option "
-"(``-a``), a simple string option (``-b``), and an integer option (``-c``)."
+"Here is a simple example with 3 different options: a boolean option (``-"
+"a``), a simple string option (``-b``), and an integer option (``-c``)."
 msgstr ""
+"Aquí está un ejemplo sencillo con 3 opciones diferentes: una opción "
+"booleana (``-a``), una opción de cadena sencilla (``-b``), y una opción "
+"entero (``-c``)."
 
 #: ../../PyMOTW/argparse/index.rst:92
 msgid ""
-"There are a few ways to pass values to single character options. The example"
-" above uses two different forms, ``-bval`` and ``-c val``."
+"There are a few ways to pass values to single character options. The "
+"example above uses two different forms, ``-bval`` and ``-c val``."
 msgstr ""
+"Hay algunas maneras de pasar valores a las opciones de un solo carácter. El "
+"ejemplo anterior utiliza dos formas diferentes, ``-bval`` y ``-c val``."
 
 #: ../../PyMOTW/argparse/index.rst:107
 msgid ""
@@ -140,24 +195,33 @@ msgid ""
 "since the :class:`ArgumentParser` was told to convert the argument before "
 "storing it."
 msgstr ""
+"El tipo de valor asociado con ``'c'`` en la salida es un entero, ya que la :"
+"class:`ArgumentParser` convirtió el argumento antes de guardarlo."
 
 #: ../../PyMOTW/argparse/index.rst:111
 msgid ""
 "\"Long\" option names, with more than a single character in their name, are "
 "handled in the same way."
 msgstr ""
+"Nombres de opción \"largo\", con más de un solo carácter en su nombre, se "
+"manejan de la misma manera."
 
 #: ../../PyMOTW/argparse/index.rst:118
 msgid "And the results are similar:"
-msgstr ""
+msgstr "Y los resultados son similares:"
 
 #: ../../PyMOTW/argparse/index.rst:132
 msgid ""
 "One area in which :mod:`argparse` differs from :mod:`optparse` is the "
 "treatment of non-optional argument values.  While :mod:`optparse` sticks to "
-"option parsing, :mod:`argparse` is a full command-line argument parser tool,"
-" and handles non-optional arguments as well."
+"option parsing, :mod:`argparse` is a full command-line argument parser "
+"tool, and handles non-optional arguments as well."
 msgstr ""
+"Un área en la que :mod: `argparse` difiere de :mod:` optparse` es el "
+"tratamiento de valores de argumento no opcional. Mientras :mod:`optparse` "
+"se pega a la opción de análisis, :mod:`argparse` es una herramienta "
+"completa de análisis de argumentos de línea de comandos, y maneja "
+"argumentos no opcionales también."
 
 #: ../../PyMOTW/argparse/index.rst:141
 msgid ""
@@ -166,159 +230,219 @@ msgid ""
 "line, or the value given cannot be converted to the right type, an error is "
 "reported."
 msgstr ""
+"En este ejemplo, el argumento de \"count\" es un entero y el argumento de "
+"\"units\" se guarda como una cadena. Si bien no se proporciona en la línea "
+"de comandos, o el valor dado no se puede convertir al tipo correcto, se "
+"informa de un error."
 
 #: ../../PyMOTW/argparse/index.rst:171
 msgid "Argument Actions"
-msgstr ""
+msgstr "Acciones de argumentos"
 
 #: ../../PyMOTW/argparse/index.rst:173
 msgid ""
 "There are six built-in actions that can be triggered when an argument is "
 "encountered:"
 msgstr ""
+"Hay seis acciones integradas que se pueden activar cuando se encuentra un "
+"argumento:"
 
 #: ../../PyMOTW/argparse/index.rst:178
 msgid "``store``"
-msgstr ""
+msgstr "``store``"
 
 #: ../../PyMOTW/argparse/index.rst:177
 msgid ""
 "Save the value, after optionally converting it to a different type. This is "
 "the default action taken if none is specified expliclity."
 msgstr ""
+"Guardar el valor, después de convertir opcionalmente a un tipo diferente. "
+"Esta es la acción por defecto toma si no se especifica de forma explícita."
 
 #: ../../PyMOTW/argparse/index.rst:183
 msgid "``store_const``"
-msgstr ""
+msgstr "``store_const``"
 
 #: ../../PyMOTW/argparse/index.rst:181
 msgid ""
 "Save a value defined as part of the argument specification, rather than a "
-"value that comes from the arguments being parsed.  This is typically used to"
-" implement command line flags that aren't booleans."
+"value that comes from the arguments being parsed.  This is typically used "
+"to implement command line flags that aren't booleans."
 msgstr ""
+"Guarda un valor definido como parte de la especificación de argumentos, en "
+"lugar de un valor que viene de los argumentos que se analizan. Esto "
+"normalmente se utiliza para implementar banderas de línea de comandos que "
+"no son booleanos."
 
 #: ../../PyMOTW/argparse/index.rst:187
 msgid "``store_true`` / ``store_false``"
-msgstr ""
+msgstr "``store_true`` / ``store_false``"
 
 #: ../../PyMOTW/argparse/index.rst:186
 msgid ""
 "Save the appropriate boolean value.  These actions are used to implement "
 "boolean switches."
 msgstr ""
+"Guarda el valor booleano apropiado. Estas acciones se utilizan para "
+"implementar interruptores booleanos."
 
 #: ../../PyMOTW/argparse/index.rst:191
 msgid "``append``"
-msgstr ""
+msgstr "``append``"
 
 #: ../../PyMOTW/argparse/index.rst:190
 msgid ""
 "Save the value to a list.  Multiple values are saved if the argument is "
 "repeated."
 msgstr ""
+"Guarda el valor de una lista. Varios valores se guardan si el argumento se "
+"repite."
 
 #: ../../PyMOTW/argparse/index.rst:194
 msgid "``append_const``"
-msgstr ""
+msgstr "``append_const``"
 
 #: ../../PyMOTW/argparse/index.rst:194
 msgid "Save a value defined in the argument specification to a list."
 msgstr ""
+"Guarda un valor definido en la especificación de argumento para una lista."
 
 #: ../../PyMOTW/argparse/index.rst:197
 msgid "``version``"
-msgstr ""
+msgstr "``version``"
 
 #: ../../PyMOTW/argparse/index.rst:197
 msgid "Prints version details about the program and then exits."
-msgstr ""
+msgstr "Prints versión detalles sobre el programa y luego se cierra."
 
 #: ../../PyMOTW/argparse/index.rst:289
 msgid "Option Prefixes"
-msgstr ""
+msgstr "Los prefijos Opción"
 
 #: ../../PyMOTW/argparse/index.rst:291
 msgid ""
-"The default syntax for options is based on the Unix convention of signifying"
-" command line switches using a prefix of \"-\". :mod:`argparse` supports "
-"other prefixes, so you can make your program conform to the local platform "
-"default (i.e., use \"/\" on Windows) or follow a different convention."
+"The default syntax for options is based on the Unix convention of "
+"signifying command line switches using a prefix of \"-\". :mod:`argparse` "
+"supports other prefixes, so you can make your program conform to the local "
+"platform default (i.e., use \"/\" on Windows) or follow a different "
+"convention."
 msgstr ""
+"La sintaxis predeterminada para las opciones se basa en la convención de "
+"Unix de significar la línea de comandos utilizando un prefijo de \"-\". : "
+"mod: `argparse` soporta otros prefijos, por lo que puede hacer que su "
+"programa se ajuste a los valores de la plataforma local (es decir, el uso de"
+"\" / \"en Windows) o seguir una convención diferente."
 
 #: ../../PyMOTW/argparse/index.rst:301
 msgid ""
-"Set the *prefix_chars* parameter for the :class:`ArgumentParser` to a string"
-" containing all of the characters that should be allowed to signify options."
-"  It is important to understand that although *prefix_chars* establishes the"
-" allowed switch characters, the individual argument definitions specify the "
-"syntax for a given switch. This gives you explicit control over whether "
-"options using different prefixes are aliases (such as might be the case for "
-"platform-independent command line syntax) or alternatives (e.g., using "
-"\"``+``\" to indicate turning a switch on and \"``-``\" to turn it off). In "
-"the example above, ``+a`` and ``-a`` are separate arguments, and ``//noarg``"
-" can also be given as ``++noarg``, but not ``--noarg``."
+"Set the *prefix_chars* parameter for the :class:`ArgumentParser` to a "
+"string containing all of the characters that should be allowed to signify "
+"options.  It is important to understand that although *prefix_chars* "
+"establishes the allowed switch characters, the individual argument "
+"definitions specify the syntax for a given switch. This gives you explicit "
+"control over whether options using different prefixes are aliases (such as "
+"might be the case for platform-independent command line syntax) or "
+"alternatives (e.g., using \"``+``\" to indicate turning a switch on and "
+"\"``-``\" to turn it off). In the example above, ``+a`` and ``-a`` are "
+"separate arguments, and ``//noarg`` can also be given as ``++noarg``, but "
+"not ``--noarg``."
 msgstr ""
+"Ajuste el parámetro *prefix_chars* para :class:`ArgumentParser` a una "
+"cadena que contiene todos los caracteres que se debe permitir para "
+"significar opciones. Es importante entender que aunque *prefix_chars* "
+"establece los caracteres de conmutación permitidos, las definiciones de "
+"argumentos individuales especifican la sintaxis de un interruptor dado. "
+"Esto le da un control explícito sobre si las opciones que utilizan "
+"diferentes prefijos son alias (como podría ser el caso de la sintaxis de "
+"línea de comandos independiente de la plataforma) o alternativas (por "
+"ejemplo, utilizando \"``+``\" para indicar girar un interruptor de "
+"encendido y \"``-``\" para apagarlo). En el ejemplo anterior, ``+a`` y ``-"
+"a`` son argumentos separados, y ``//noarg`` también puede darse como ``+"
+"+noarg``, pero no ``--noarg ``."
 
 #: ../../PyMOTW/argparse/index.rst:361
 msgid "Sources of Arguments"
-msgstr ""
+msgstr "Fuentes de argumentos"
 
 #: ../../PyMOTW/argparse/index.rst:363
 msgid ""
 "In the examples so far, the list of arguments given to the parser have come "
-"from a list passed in explicitly, or were taken implicitly from "
-":ref:`sys.argv <sys-argv>`.  Passing the list explicitly is useful when you "
-"are using :mod:`argparse` to process command line-like instructions that do "
-"not come from the command line (such as in a configuration file)."
+"from a list passed in explicitly, or were taken implicitly from :ref:`sys."
+"argv <sys-argv>`.  Passing the list explicitly is useful when you are "
+"using :mod:`argparse` to process command line-like instructions that do not "
+"come from the command line (such as in a configuration file)."
 msgstr ""
+"En los ejemplos hasta el momento, la lista de argumentos dados al "
+"analizador han venido de una lista aprobada en forma explícita o "
+"implícitamente se tomaron a partir de :ref:`sys.argv <sys-argv>`. Al pasar "
+"la lista de manera explícita es útil cuando se utiliza :mod:`argparse` para "
+"procesar instrucciones de línea de comandos como que no provienen de la "
+"línea de comandos (como en un archivo de configuración)."
 
 #: ../../PyMOTW/argparse/index.rst:374
 msgid ""
 ":mod:`shlex` makes it easy to split the string stored in the configuration "
 "file."
 msgstr ""
+":mod:`shlex` hace que sea fácil para dividir la cadena almacenada en el "
+"archivo de configuración."
 
 #: ../../PyMOTW/argparse/index.rst:391
 msgid ""
-"An alternative to processing the configuration file yourself is to tell "
-":mod:`argparse` how to recognize an argument that specifies an input file "
+"An alternative to processing the configuration file yourself is to tell :"
+"mod:`argparse` how to recognize an argument that specifies an input file "
 "containing a set of arguments to be processed using *fromfile_prefix_chars*."
 msgstr ""
+"Una alternativa para el procesamiento de la configuración del archivo es "
+"decirle usted mismo a :mod:`argparse` cómo reconocer un argumento que "
+"especifica un archivo de entrada que contiene un conjunto de argumentos "
+"para ser procesados utilizando *fromfile_prefix_chars*."
 
 #: ../../PyMOTW/argparse/index.rst:400
 msgid ""
-"This example stops when it finds an argument prefixed with ``@``, then reads"
-" the named file to find more arguments.  For example, an input file "
+"This example stops when it finds an argument prefixed with ``@``, then "
+"reads the named file to find more arguments.  For example, an input file "
 "``argparse_fromfile_prefix_chars.txt`` contains a series of arguments, one "
 "per line:"
 msgstr ""
+"En este ejemplo se detiene cuando encuentra un argumento con el prefijo "
+"``@'', a continuación, lee el archivo llamado para encontrar más "
+"argumentos. Por ejemplo, un archivo de entrada "
+"``argparse_fromfile_prefix_chars.txt`` contiene una serie de argumentos, "
+"uno por línea:"
 
 #: ../../PyMOTW/argparse/index.rst:408
 msgid "The output produced when processing the file is:"
-msgstr ""
+msgstr "La salida producida al procesar el archivo es:"
 
 #: ../../PyMOTW/argparse/index.rst:423
 msgid "Automatically Generated Options"
-msgstr ""
+msgstr "Opciones generados automáticamente"
 
 #: ../../PyMOTW/argparse/index.rst:425
 msgid ""
-":mod:`argparse` will automatically add options to generate help and show the"
-" version information for your application, if configured to do so."
+":mod:`argparse` will automatically add options to generate help and show "
+"the version information for your application, if configured to do so."
 msgstr ""
+":mod:`argparse` añadirá automáticamente las opciones para generar ayuda y "
+"mostrar la información de versión de la aplicación, si está configurado "
+"para hacerlo."
 
 #: ../../PyMOTW/argparse/index.rst:429
 msgid ""
-"The *add_help* argument to :class:`ArgumentParser` controls the help-related"
-" options."
+"The *add_help* argument to :class:`ArgumentParser` controls the help-"
+"related options."
 msgstr ""
+"El argumento *add_help* de :class:`ArgumentParser` controla las opciones de "
+"ayuda relacionados."
 
 #: ../../PyMOTW/argparse/index.rst:436
 msgid ""
 "The help options (``-h`` and ``--help``) are added by default, but can be "
 "disabled by setting *add_help* to false."
 msgstr ""
+"Las opciones de ayuda (``-h`` y ``--help``) se añaden por defecto, pero se "
+"puede desactivar configurando *add_help* como falso."
 
 #: ../../PyMOTW/argparse/index.rst:443
 msgid ""
@@ -326,22 +450,30 @@ msgid ""
 "requesting help, some applications or uses of :mod:`argparse` either don't "
 "need to provide help or need to use those option names for other purposes."
 msgstr ""
+"Aunque ``-h`` y ``--help`` son nombres de opción de facto para solicitar "
+"ayuda, algunas aplicaciones o usos de :mod:`argparse` o bien no necesitan "
+"proporcionar ayuda o necesitan utilizar esos nombres de opciones para otros "
+"fines."
 
 #: ../../PyMOTW/argparse/index.rst:472
 msgid ""
 "The version options (``-v`` and ``--version``) are added when *version* is "
 "set in the :class:`ArgumentParser` constructor."
 msgstr ""
+"Las opciones de versión (``-v`` y ` --version``) se añaden cuando *versión* "
+"se establece en el constructor de :class:`ArgumentParser` ."
 
 #: ../../PyMOTW/argparse/index.rst:479
 msgid ""
 "Both forms of the option print the program's version string, then cause it "
 "to exit immediately."
 msgstr ""
+"Ambas formas de imprimen la versión del programa, y continuación salen del "
+"programa."
 
 #: ../../PyMOTW/argparse/index.rst:512
 msgid "Parser Organization"
-msgstr ""
+msgstr "Organización Analizador"
 
 #: ../../PyMOTW/argparse/index.rst:514
 msgid ""
@@ -349,10 +481,13 @@ msgid ""
 "parsers, to make implementation easier or to improve the usability of the "
 "help output."
 msgstr ""
+":mod:`argparse` incluye varias características para organizar sus programas "
+"de análisis de argumentos, para hacer la aplicación más fácil o para "
+"mejorar la usabilidad de la salida de ayuda."
 
 #: ../../PyMOTW/argparse/index.rst:519
 msgid "Sharing Parser Rules"
-msgstr ""
+msgstr "Compartiendo Reglas del analizador"
 
 #: ../../PyMOTW/argparse/index.rst:521
 msgid ""
@@ -360,31 +495,46 @@ msgid ""
 "take a set of arguments, and then specialize in some way. For example, if "
 "the programs all need to authenticate the user before taking any real "
 "action, they would all need to support ``--user`` and ``--password`` "
-"options.  Rather than add the options explicitly to every "
-":class:`ArgumentParser`, you can define a \"parent\" parser with the shared "
+"options.  Rather than add the options explicitly to every :class:"
+"`ArgumentParser`, you can define a \"parent\" parser with the shared "
 "options, and then have the parsers for the individual programs inherit from "
 "its options."
 msgstr ""
+"Es común poner en práctica que un conjunto de programas de línea de "
+"comandos tomen todos un conjunto de argumentos, y luego especializarse en "
+"alguna manera. Por ejemplo, si los programas de tienen la necesidad de "
+"autenticar al usuario antes de tomar cualquier acción real, tendrían todos "
+"la necesidad de soportar a las opciones ``--password`` y --user`` . En "
+"lugar de agregar las opciones de manera explícita a todas :class:"
+"`ArgumentParser`, puede definir un programa de análisis \"padre\"con las "
+"opciones comunes, y luego tener los programas de análisis de los programas "
+"individuales hereden sus opciones."
 
 #: ../../PyMOTW/argparse/index.rst:530
 msgid ""
-"The first step is to set up the parser with the shared argument definitions."
-"  Since each subsequent user of the parent parser is going to try to add the"
-" same help options, causing an exception, we turn off automatic help "
-"generation in the base parser."
+"The first step is to set up the parser with the shared argument "
+"definitions.  Since each subsequent user of the parent parser is going to "
+"try to add the same help options, causing an exception, we turn off "
+"automatic help generation in the base parser."
 msgstr ""
+"El primer paso es configurar el analizador con las definiciones de "
+"argumentos compartidos. Dado que cada usuario posterior del analizador de "
+"los padres va a tratar de añadir las mismas opciones de ayuda, haciendo una "
+"excepción, apagamos la generación automática de ayuda en el programa de "
+"análisis de base."
 
 #: ../../PyMOTW/argparse/index.rst:539
 msgid "Next, create another parser with *parents* set:"
 msgstr ""
+"A continuación, crear otro programa de análisis con los conjuntos *padres*:"
 
 #: ../../PyMOTW/argparse/index.rst:545
 msgid "And the resulting program takes all three options:"
-msgstr ""
+msgstr "Y el programa resultante tiene las tres opciones:"
 
 #: ../../PyMOTW/argparse/index.rst:568
 msgid "Conflicting Options"
-msgstr ""
+msgstr "Conflicto de opciones"
 
 #: ../../PyMOTW/argparse/index.rst:570
 msgid ""
@@ -394,6 +544,12 @@ msgid ""
 "built-in handlers are ``error`` (the default), and ``resolve``, which picks "
 "a handler based on the order they are added."
 msgstr ""
+"El ejemplo anterior señaló que la adición de dos manejadores de argumentos "
+"a un programa de análisis utilizando el mismo nombre de argumento provoca "
+"una excepción. Cambiar el comportamiento de resolución de conflictos "
+"mediante el paso a *conflict_handler*. Los dos controladores incorporados "
+"son ``error`` (por defecto), y ``resolve``, que recoge un controlador "
+"basado en el orden en que se agregan."
 
 #: ../../PyMOTW/argparse/index.rst:580
 msgid ""
@@ -438,9 +594,9 @@ msgstr ""
 
 #: ../../PyMOTW/argparse/index.rst:671
 msgid ""
-"Create the \"authentication\" group with :func:`add_argument_group` and then"
-" add each of the authentication-related options to the group, instead of the"
-" base parser."
+"Create the \"authentication\" group with :func:`add_argument_group` and "
+"then add each of the authentication-related options to the group, instead "
+"of the base parser."
 msgstr ""
 
 #: ../../PyMOTW/argparse/index.rst:679
@@ -459,9 +615,9 @@ msgstr ""
 
 #: ../../PyMOTW/argparse/index.rst:712
 msgid ""
-"Defining mutually exclusive options is a special case of the option grouping"
-" feature, and uses :func:`add_mutually_exclusive_group` instead of "
-":func:`add_argument_group`."
+"Defining mutually exclusive options is a special case of the option "
+"grouping feature, and uses :func:`add_mutually_exclusive_group` instead of :"
+"func:`add_argument_group`."
 msgstr ""
 
 #: ../../PyMOTW/argparse/index.rst:720
@@ -503,8 +659,8 @@ msgstr ""
 
 #: ../../PyMOTW/argparse/index.rst:820
 msgid ""
-"And when the arguments are parsed, the :class:`Namespace` object returned by"
-" :func:`parse_args` includes only the values related to the command "
+"And when the arguments are parsed, the :class:`Namespace` object returned "
+"by :func:`parse_args` includes only the values related to the command "
 "specified."
 msgstr ""
 
@@ -583,11 +739,11 @@ msgstr ""
 
 #: ../../PyMOTW/argparse/index.rst:945
 msgid ""
-":mod:`argparse` treats all argument values as strings, unless you tell it to"
-" convert the string to another type.  The *type* parameter to "
-":func:`add_argument` expects a converter function used by the "
-":class:`ArgumentParser` to transform the argument value from a string to "
-"some other type."
+":mod:`argparse` treats all argument values as strings, unless you tell it "
+"to convert the string to another type.  The *type* parameter to :func:"
+"`add_argument` expects a converter function used by the :class:"
+"`ArgumentParser` to transform the argument value from a string to some "
+"other type."
 msgstr ""
 
 #: ../../PyMOTW/argparse/index.rst:955
@@ -598,8 +754,8 @@ msgstr ""
 
 #: ../../PyMOTW/argparse/index.rst:981
 msgid ""
-"If the type conversion fails, :mod:`argparse` raises an exception. "
-":ref:`TypeError <exceptions-TypeError>` and :ref:`ValueError <exceptions-"
+"If the type conversion fails, :mod:`argparse` raises an exception. :ref:"
+"`TypeError <exceptions-TypeError>` and :ref:`ValueError <exceptions-"
 "ValueError>` exceptions are trapped automatically and converted to a simple "
 "error message for the user.  Other exceptions, such as the :ref:`IOError "
 "<exceptions-IOError>` in the example below where the input file does not "
@@ -625,15 +781,15 @@ msgstr ""
 #: ../../PyMOTW/argparse/index.rst:1054
 msgid ""
 "Although :class:`file` objects can instantiated with a single string "
-"argument, that does not allow you to specify the access mode. "
-":class:`FileType` gives you a more flexible way of specifying that an "
-"argument should be a file, including the mode and buffer size."
+"argument, that does not allow you to specify the access mode. :class:"
+"`FileType` gives you a more flexible way of specifying that an argument "
+"should be a file, including the mode and buffer size."
 msgstr ""
 
 #: ../../PyMOTW/argparse/index.rst:1063
 msgid ""
-"The value associated with the argument name is the open file handle. You are"
-" responsible for closing the file yourself when you are done with it."
+"The value associated with the argument name is the open file handle. You "
+"are responsible for closing the file yourself when you are done with it."
 msgstr ""
 
 #: ../../PyMOTW/argparse/index.rst:1099
@@ -642,14 +798,14 @@ msgstr ""
 
 #: ../../PyMOTW/argparse/index.rst:1101
 msgid ""
-"In addition to the built-in actions described earlier, you can define custom"
-" actions by providing an object that implements the Action API. The object "
-"passed to :func:`add_argument` as *action* should take parameters describing"
-" the argument being defined (all of the same arguments given to "
-":func:`add_argument`) and return a callable object that takes as parameters "
+"In addition to the built-in actions described earlier, you can define "
+"custom actions by providing an object that implements the Action API. The "
+"object passed to :func:`add_argument` as *action* should take parameters "
+"describing the argument being defined (all of the same arguments given to :"
+"func:`add_argument`) and return a callable object that takes as parameters "
 "the *parser* processing the arguments, the *namespace* holding the parse "
-"results, the *value* of the argument being acted on, and the *option_string*"
-" that triggered the action."
+"results, the *value* of the argument being acted on, and the "
+"*option_string* that triggered the action."
 msgstr ""
 
 #: ../../PyMOTW/argparse/index.rst:1110
@@ -662,8 +818,8 @@ msgstr ""
 #: ../../PyMOTW/argparse/index.rst:1119
 msgid ""
 "The type of *values* depends on the value of *nargs*.  If the argument "
-"allows multiple values, *values* will be a list even if it only contains one"
-" item."
+"allows multiple values, *values* will be a list even if it only contains "
+"one item."
 msgstr ""
 
 #: ../../PyMOTW/argparse/index.rst:1123
