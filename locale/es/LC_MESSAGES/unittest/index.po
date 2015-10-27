@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: Python Module of the Week 2.1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-06 13:35-0300\n"
-"PO-Revision-Date: 2015-10-25 08:55-0300\n"
+"PO-Revision-Date: 2015-10-27 17:03-0300\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_AR\n"
-"X-Generator: Poedit 1.7.5\n"
+"X-Generator: Poedit 1.8.6\n"
 
 #: ../../PyMOTW/unittest/index.rst:3
 msgid "unittest -- Automated testing framework"
@@ -130,7 +130,7 @@ msgid ""
 "There is no explicit way to cause a test to \"pass\", so a test's status "
 "depends on the presence (or absence) of an exception."
 msgstr ""
-"No hay manera explícita de causar una prueba para \"pass\", por lo que el "
+"No hay manera explícita de causar una prueba para \"pase\", por lo que el "
 "estado de una prueba depende de la presencia (o ausencia) de una excepción."
 
 #: ../../PyMOTW/unittest/index.rst:104
@@ -160,7 +160,7 @@ msgstr ""
 
 #: ../../PyMOTW/unittest/index.rst:179
 msgid "Asserting Truth"
-msgstr "Afirmando Verdad"
+msgstr "Reafirmando Verdad"
 
 #: ../../PyMOTW/unittest/index.rst:181
 msgid ""
