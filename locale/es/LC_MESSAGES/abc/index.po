@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: Python Module of the Week 2.1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-06 13:35-0300\n"
-"PO-Revision-Date: 2015-10-24 06:11-0300\n"
+"PO-Revision-Date: 2015-10-28 06:24-0300\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -16,342 +16,268 @@ msgstr ""
 
 #: ../../PyMOTW/abc/index.rst:3
 msgid "abc -- Abstract Base Classes"
-msgstr ""
+msgstr "abc -  Clases base abstractas"
 
 #: ../../PyMOTW/abc/index.rst:8
 msgid "Define and use abstract base classes for API checks in your code."
-msgstr ""
+msgstr "Definir y utilizar clases base abstractas para los controles de la API en su código."
 
 #: ../../PyMOTW/abc/index.rst:9
 msgid "2.6"
-msgstr ""
+msgstr "2.6"
 
 #: ../../PyMOTW/abc/index.rst:12
 msgid "Why use Abstract Base Classes?"
-msgstr ""
+msgstr "¿Por qué utilizar clases base abstractas?"
 
 #: ../../PyMOTW/abc/index.rst:14
-msgid ""
-"Abstract base classes are a form of interface checking more strict than "
-"individual ``hasattr()`` checks for particular methods.  By defining an "
-"abstract base class, you can define a common API for a set of subclasses.  "
-"This capability is especially useful in situations where a third-party is "
-"going to provide implementations, such as with plugins to an application, "
-"but can also aid you when working on a large team or with a large code-base "
-"where keeping all classes in your head at the same time is difficult or not "
-"possible."
-msgstr ""
+msgid "Abstract base classes are a form of interface checking more strict than individual ``hasattr()`` checks for particular methods.  By defining an abstract base class, you can define a common API for a set of subclasses.  This capability is especially useful in situations where a third-party is going to provide implementations, such as with plugins to an application, but can also aid you when working on a large team or with a large code-base where keeping all classes in your head at the same time is difficult or not possible."
+msgstr "Clases base abstractas son una forma de interfaz de comprobación mas estricta que controles individuales ``hasattr()`` para métodos particulares"
 
 #: ../../PyMOTW/abc/index.rst:24
 msgid "How ABCs Work"
-msgstr ""
+msgstr "Como trabaja ABC"
 
 #: ../../PyMOTW/abc/index.rst:26
-msgid ""
-":mod:`abc` works by marking methods of the base class as abstract, and then "
-"registering concrete classes as implementations of the abstract base.  If "
-"your code requires a particular API, you can use ``issubclass()`` or "
-"``isinstance()`` to check an object against the abstract class."
-msgstr ""
+msgid ":mod:`abc` works by marking methods of the base class as abstract, and then registering concrete classes as implementations of the abstract base.  If your code requires a particular API, you can use ``issubclass()`` or ``isinstance()`` to check an object against the abstract class."
+msgstr ":mod:'abc' trabaja marcando métodos de la clase base como abstracto, y luego registrando clases concretas como implementaciones de la base abstracta. Si su código requiere una API particular, puedes usar ''issubclass()'' o ''isinstance()'' para comprobar un objeto contra la clase abstracta"
 
 #: ../../PyMOTW/abc/index.rst:32
-msgid ""
-"Let's start by defining an abstract base class to represent the API of a "
-"set of plugins for saving and loading data."
-msgstr ""
+msgid "Let's start by defining an abstract base class to represent the API of a set of plugins for saving and loading data."
+msgstr "Vamos a empezar a definiendo una clase base abstracta para representar la API de un conjunto de plugins para guardar y cargar datos"
 
 #: ../../PyMOTW/abc/index.rst:41
 msgid "Registering a Concrete Class"
-msgstr ""
+msgstr "Registrando una clase concreta"
 
 #: ../../PyMOTW/abc/index.rst:43
-msgid ""
-"There are two ways to indicate that a concrete class implements an "
-"abstract: register the class with the abc or subclass directly from the abc."
-msgstr ""
+msgid "There are two ways to indicate that a concrete class implements an abstract: register the class with the abc or subclass directly from the abc."
+msgstr "Hay dos formas para indicar una que una clase concreta implementa un abstracto: registrar la clase con abc o subclase directamente desde abc"
 
 #: ../../PyMOTW/abc/index.rst:51
-msgid ""
-"In this example the ``PluginImplementation`` is not derived from "
-"``PluginBase``, but is registered as implementing the ``PluginBase`` API."
-msgstr ""
+msgid "In this example the ``PluginImplementation`` is not derived from ``PluginBase``, but is registered as implementing the ``PluginBase`` API."
+msgstr "En este de ejemplo de ``PluginImplementation`` no deriva de ``PluginBase``, pero esta registrado como una implementación de la API ``PluginBase``"
 
 #: ../../PyMOTW/abc/index.rst:69
 msgid "Implementation Through Subclassing"
-msgstr ""
+msgstr "Implementación a través de subclases"
 
 #: ../../PyMOTW/abc/index.rst:71
-msgid ""
-"By subclassing directly from the base, we can avoid the need to register "
-"the class explicitly."
-msgstr ""
+msgid "By subclassing directly from the base, we can avoid the need to register the class explicitly."
+msgstr "Por clases directamente de la base, se puede evitar la necesidad de registrar la clase explícitamente. "
 
 #: ../../PyMOTW/abc/index.rst:78
-msgid ""
-"In this case the normal Python class management is used to recognize "
-"``PluginImplementation`` as implementing the abstract ``PluginBase``."
-msgstr ""
+msgid "In this case the normal Python class management is used to recognize ``PluginImplementation`` as implementing the abstract ``PluginBase``."
+msgstr "En este caso se usa la gestión normal de la clase de Python para reconocer ``PluginImplementation``  como una implementación abstracta de ``PluginBase``."
 
 #: ../../PyMOTW/abc/index.rst:94
-msgid ""
-"A side-effect of using direct subclassing is it is possible to find all of "
-"the implementations of your plugin by asking the base class for the list of "
-"known classes derived from it (this is not an abc feature, all classes can "
-"do this)."
-msgstr ""
+msgid "A side-effect of using direct subclassing is it is possible to find all of the implementations of your plugin by asking the base class for the list of known classes derived from it (this is not an abc feature, all classes can do this)."
+msgstr "Un efecto secundario del uso de subclases directa es que es posible encontrar todas las implementaciones de su plugin consultando a la clase base por la lista de las clases conocidas derivadas de ella (esto no es una característica de abc, todas las clases pueden hacer esto)"
 
 #: ../../PyMOTW/abc/index.rst:103
-msgid ""
-"Notice that even though ``abc_register`` is imported, "
-"``RegisteredImplementation`` is not among the list of subclasses because it "
-"is not actually derived from the base."
-msgstr ""
+msgid "Notice that even though ``abc_register`` is imported, ``RegisteredImplementation`` is not among the list of subclasses because it is not actually derived from the base."
+msgstr "Tenga en cuenta que a pesar de que `` abc_register`` es importado, `` RegisteredImplementation`` no está en la lista de subclases, ya que en realidad no deriva de la base."
 
 #: ../../PyMOTW/abc/index.rst:119
-msgid ""
-"Dr. André Roberge `has described <http://us.pycon.org/2009/conference/"
-"schedule/event/47/>`_ using this capability to discover plugins by "
-"importing all of the modules in a directory dynamically and then looking at "
-"the subclass list to find the implementation classes."
-msgstr ""
+msgid "Dr. André Roberge `has described <http://us.pycon.org/2009/conference/schedule/event/47/>`_ using this capability to discover plugins by importing all of the modules in a directory dynamically and then looking at the subclass list to find the implementation classes."
+msgstr "Dr. André Roberge `ha descrito <http://us.pycon.org/2009/conference/schedule/event/47/>` _ utilización de esta capacidad para descubrir plugins mediante la importación de todos los módulos en un directorio de forma dinámica y luego mirando en la lista de subclase para encontrar las implementaciones de las clases."
 
 #: ../../PyMOTW/abc/index.rst:126
 msgid "Incomplete Implementations"
-msgstr ""
+msgstr "Implementaciones imcompletas"
 
 #: ../../PyMOTW/abc/index.rst:128
-msgid ""
-"Another benefit of subclassing directly from your abstract base class is "
-"that the subclass cannot be instantiated unless it fully implements the "
-"abstract portion of the API.  This can keep half-baked implementations from "
-"triggering unexpected errors at runtime."
-msgstr ""
+msgid "Another benefit of subclassing directly from your abstract base class is that the subclass cannot be instantiated unless it fully implements the abstract portion of the API.  This can keep half-baked implementations from triggering unexpected errors at runtime."
+msgstr "Otro beneficio de subclases directamente desde su clase base abstracta es que la subclase no puede ser instanciada a menos que aplique plenamente la parte abstracta de la API. Esto puede mantener implementaciones medio terminadas activen errores inesperados en tiempo de ejecución."
 
 #: ../../PyMOTW/abc/index.rst:156
 msgid "Concrete Methods in ABCs"
-msgstr ""
+msgstr "Métodos concretos en ABC"
 
 #: ../../PyMOTW/abc/index.rst:158
-msgid ""
-"Although a concrete class must provide an implementation of an abstract "
-"methods, the abstract base class can also provide an implementation that "
-"can be invoked via ``super()``.  This lets you re-use common logic by "
-"placing it in the base class, but force subclasses to provide an overriding "
-"method with (potentially) custom logic."
-msgstr ""
+msgid "Although a concrete class must provide an implementation of an abstract methods, the abstract base class can also provide an implementation that can be invoked via ``super()``.  This lets you re-use common logic by placing it in the base class, but force subclasses to provide an overriding method with (potentially) custom logic."
+msgstr "Aunque una clase concreta debe proporcionar una implementación de un método abstracto, la clase base abstracta también puede proporcionar una implementación que se puede invocar a través de `` super () ``. Esto le permite volver a utilizar la lógica común mediante la colocación en la clase base, pero fuerza a la subclase a proporcionar un método primordial con (potencialmente) lógica personalizada."
 
 #: ../../PyMOTW/abc/index.rst:169
-msgid ""
-"Since ``ABCWithConcreteImplementation`` is an abstract base class, it isn't "
-"possible to instantiate it to use it directly.  Subclasses *must* provide "
-"an override for ``retrieve_values()``, and in this case the concrete class "
-"massages the data before returning it at all."
-msgstr ""
+msgid "Since ``ABCWithConcreteImplementation`` is an abstract base class, it isn't possible to instantiate it to use it directly.  Subclasses *must* provide an override for ``retrieve_values()``, and in this case the concrete class massages the data before returning it at all."
+msgstr "Desde `` ABCWithConcreteImplementation`` es una clase base abstracta, no es posible crear una instancia para utilizarlo directamente. Las subclases *deben* proporcionar un reemplazo para `` retrieve_values () ``, y en este caso las clases concretas transforman los datos antes de devolverlos a todos."
 
 #: ../../PyMOTW/abc/index.rst:192
 msgid "Abstract Properties"
-msgstr ""
+msgstr "Propiedades abstractas"
 
 #: ../../PyMOTW/abc/index.rst:194
-msgid ""
-"If your API specification includes attributes in addition to methods, you "
-"can require the attributes in concrete classes by defining them with "
-"``@abstractproperty``."
-msgstr ""
+msgid "If your API specification includes attributes in addition to methods, you can require the attributes in concrete classes by defining them with ``@abstractproperty``."
+msgstr "Si su especificación API incluye atributos además de los métodos, se puede requerir los atributos en una clase concreta definiendo estos con  ``@abstractproperty``."
 
 #: ../../PyMOTW/abc/index.rst:202
-msgid ""
-"The ``Base`` class in the example cannot be instantiated because it has "
-"only an abstract version of the property getter method."
-msgstr ""
+msgid "The ``Base`` class in the example cannot be instantiated because it has only an abstract version of the property getter method."
+msgstr "La clase ``Base`` en el ejemplo no puede ser instanciada porque tiene solamente una versión abstracta del método getter de la propiedad."
 
 #: ../../PyMOTW/abc/index.rst:219
 msgid "You can also define abstract read/write properties."
-msgstr ""
+msgstr "También puede definir las propiedades abstractas de lectura / escritura."
 
 #: ../../PyMOTW/abc/index.rst:225
-msgid ""
-"Notice that the concrete property must be defined the same way as the "
-"abstract property.  Trying to override a read/write property in "
-"``PartialImplementation`` with one that is read-only does not work."
-msgstr ""
+msgid "Notice that the concrete property must be defined the same way as the abstract property.  Trying to override a read/write property in ``PartialImplementation`` with one that is read-only does not work."
+msgstr "Observe que la propiedad en concreto debe ser definida de la misma manera como la propiedad abstracta. Tratar de sobrescribir una propiedad de lectura / escritura en ``PartialImplementation`` con uno que es de sólo lectura no funciona."
 
 #: ../../PyMOTW/abc/index.rst:244
-msgid ""
-"To use the decorator syntax does with read/write abstract properties, the "
-"methods to get and set the value should be named the same."
-msgstr ""
+msgid "To use the decorator syntax does with read/write abstract properties, the methods to get and set the value should be named the same."
+msgstr "Para utilizar la sintaxis de decorador con las propiedades abstractas de lectura/escritura, los métodos para obtener y establecer el valor deben tener el mismo nombre."
 
 #: ../../PyMOTW/abc/index.rst:251
-msgid ""
-"Notice that both methods in the ``Base`` and ``Implementation`` classes are "
-"named ``value()``, although they have different signatures."
-msgstr ""
+msgid "Notice that both methods in the ``Base`` and ``Implementation`` classes are named ``value()``, although they have different signatures."
+msgstr "Observe que ambos métodos en las clases ``Base`` y ``Implementation`` se llaman ``value()``, aunque tienen diferentes firmas."
 
 #: ../../PyMOTW/abc/index.rst:271
 msgid "Collection Types"
-msgstr ""
+msgstr "Tipos de colección"
 
 #: ../../PyMOTW/abc/index.rst:273
-msgid ""
-"The :mod:`collections` module defines several abstract base classes related "
-"to container (and containable) types."
-msgstr ""
+msgid "The :mod:`collections` module defines several abstract base classes related to container (and containable) types."
+msgstr "El módulo :mod:`collections` define varios tipos de clases abstractas relacionadas con contenedores (y controlable)."
 
 #: ../../PyMOTW/abc/index.rst:276
 msgid "General container classes:"
-msgstr ""
+msgstr "Contenedor general de clases:"
 
 #: ../../PyMOTW/abc/index.rst:278
 msgid "Container"
-msgstr ""
+msgstr "Container"
 
 #: ../../PyMOTW/abc/index.rst:279
 msgid "Sized"
-msgstr ""
+msgstr "Sized"
 
 #: ../../PyMOTW/abc/index.rst:281
 msgid "Iterator and Sequence classes:"
-msgstr ""
+msgstr "Clases Iterator y Sequence"
 
 #: ../../PyMOTW/abc/index.rst:283
 msgid "Iterable"
-msgstr ""
+msgstr "Iterable"
 
 #: ../../PyMOTW/abc/index.rst:284
 msgid "Iterator"
-msgstr ""
+msgstr "Iterator"
 
 #: ../../PyMOTW/abc/index.rst:285
 msgid "Sequence"
-msgstr ""
+msgstr "Sequence"
 
 #: ../../PyMOTW/abc/index.rst:286
 msgid "MutableSequence"
-msgstr ""
+msgstr "MutableSequence"
 
 #: ../../PyMOTW/abc/index.rst:288
 msgid "Unique values:"
-msgstr ""
+msgstr "Valores únicos:"
 
 #: ../../PyMOTW/abc/index.rst:290
 msgid "Hashable"
-msgstr ""
+msgstr "Hashable"
 
 #: ../../PyMOTW/abc/index.rst:291
 msgid "Set"
-msgstr ""
+msgstr "Set"
 
 #: ../../PyMOTW/abc/index.rst:292
 msgid "MutableSet"
-msgstr ""
+msgstr "MutableSet"
 
 #: ../../PyMOTW/abc/index.rst:294
 msgid "Mappings:"
-msgstr ""
+msgstr "Asignaciones:"
 
 #: ../../PyMOTW/abc/index.rst:296
 msgid "Mapping"
-msgstr ""
+msgstr "Mapping"
 
 #: ../../PyMOTW/abc/index.rst:297
 msgid "MutableMapping"
-msgstr ""
+msgstr "MutableMapping"
 
 #: ../../PyMOTW/abc/index.rst:298
 msgid "MappingView"
-msgstr ""
+msgstr "MappingView"
 
 #: ../../PyMOTW/abc/index.rst:299
 msgid "KeysView"
-msgstr ""
+msgstr "KeysView"
 
 #: ../../PyMOTW/abc/index.rst:300
 msgid "ItemsView"
-msgstr ""
+msgstr "ItemsView"
 
 #: ../../PyMOTW/abc/index.rst:301
 msgid "ValuesView"
-msgstr ""
+msgstr "ValuesView"
 
 #: ../../PyMOTW/abc/index.rst:303
 msgid "Miscelaneous:"
-msgstr ""
+msgstr "Misceláneos"
 
 #: ../../PyMOTW/abc/index.rst:305
 msgid "Callable"
-msgstr ""
+msgstr "Callable"
 
 #: ../../PyMOTW/abc/index.rst:307
-msgid ""
-"In addition to serving as detailed real-world examples of abstract base "
-"classes, Python's built-in types are automatically registered to these "
-"classes when you import :mod:`collections`. This means you can safely use "
-"``isinstance()`` to check parameters in your code to ensure that they "
-"support the API you need.  The base classes can also be used to define your "
-"own collection types, since many of them provide concrete implementations "
-"of the internals and only need a few methods overridden.  Refer to the "
-"standard library docs for collections for more details."
-msgstr ""
+msgid "In addition to serving as detailed real-world examples of abstract base classes, Python's built-in types are automatically registered to these classes when you import :mod:`collections`. This means you can safely use ``isinstance()`` to check parameters in your code to ensure that they support the API you need.  The base classes can also be used to define your own collection types, since many of them provide concrete implementations of the internals and only need a few methods overridden.  Refer to the standard library docs for collections for more details."
+msgstr "Además de servir como ejemplos detallados de clases base abstractas del mundo real, los tipos integrados de Python están registrados automáticamente a estas clases al importar :mod:`collections`. Esto significa que usted puede utilizar con seguridad ``isinstance()`` para comprobar parámetros en su código para asegurarse de que apoyan la API que necesita. Las clases base también se pueden usar para definir sus propios tipos de colección, ya que muchos de ellos ofrecen implementaciones concretas de las partes internas y sólo necesitan sobrescribir algunos métodos. Consulte la documentación de la biblioteca estándar de colecciones para más detalles."
 
 #: ../../PyMOTW/abc/index.rst:320
 msgid "`abc <http://docs.python.org/library/abc.html>`_"
-msgstr ""
+msgstr "`abc <http://docs.python.org/library/abc.html>`_"
 
 #: ../../PyMOTW/abc/index.rst:320
 msgid "The standard library documentation for this module."
-msgstr ""
+msgstr "La documentación de la biblioteca estándar para este módulo."
 
 #: ../../PyMOTW/abc/index.rst:323
 msgid ":pep:`3119`"
-msgstr ""
+msgstr ":pep:`3119`"
 
 #: ../../PyMOTW/abc/index.rst:323
 msgid "Introducing Abstract Base Classes"
-msgstr ""
+msgstr "La introducción de clases base abstractas"
 
 #: ../../PyMOTW/abc/index.rst:326
 msgid ":mod:`collections`"
-msgstr ""
+msgstr ":mod:`collections`"
 
 #: ../../PyMOTW/abc/index.rst:326
-msgid ""
-"The collections module includes abstract base classes for several "
-"collection types."
-msgstr ""
+msgid "The collections module includes abstract base classes for several collection types."
+msgstr "El módulo de colecciones incluye clases base abstractas para varios tipos de colección."
 
 #: ../../PyMOTW/abc/index.rst:329
 msgid "`collections <http://docs.python.org/library/collections.html>`_"
-msgstr ""
+msgstr "`collections <http://docs.python.org/library/collections.html>`_"
 
 #: ../../PyMOTW/abc/index.rst:329
 msgid "The standard library documentation for collections."
-msgstr ""
+msgstr "La documentación de la biblioteca estándar para colecciones."
 
 #: ../../PyMOTW/abc/index.rst:332
 msgid ":pep:`3141`"
-msgstr ""
+msgstr ":pep:`3141`"
 
 #: ../../PyMOTW/abc/index.rst:332
 msgid "A Type Hierarchy for Numbers"
-msgstr ""
+msgstr "Una jerarquía de tipos de números"
 
 #: ../../PyMOTW/abc/index.rst:335
-msgid ""
-"`Wikipedia: Strategy Pattern <http://en.wikipedia.org/wiki/"
-"Strategy_pattern>`_"
-msgstr ""
+msgid "`Wikipedia: Strategy Pattern <http://en.wikipedia.org/wiki/Strategy_pattern>`_"
+msgstr "`Wikipedia: Strategy Pattern <http://en.wikipedia.org/wiki/Strategy_pattern>`_"
 
 #: ../../PyMOTW/abc/index.rst:335
 msgid "Description and examples of the strategy pattern."
-msgstr ""
+msgstr "Descripción y ejemplos del patrón de estrategia."
 
 #: ../../PyMOTW/abc/index.rst:337
-msgid ""
-"`Plugins and monkeypatching <http://us.pycon.org/2009/conference/schedule/"
-"event/47/>`_"
-msgstr ""
+msgid "`Plugins and monkeypatching <http://us.pycon.org/2009/conference/schedule/event/47/>`_"
+msgstr "`Plugins and monkeypatching <http://us.pycon.org/2009/conference/schedule/event/47/>`_"
 
 #: ../../PyMOTW/abc/index.rst:338
 msgid "PyCon 2009 presentation by Dr. André Roberge"
-msgstr ""
+msgstr "Presentación en la PyCon 2009 por el Dr. André Roberge"
