@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: Python Module of the Week 2.1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-06 13:35-0300\n"
-"PO-Revision-Date: 2015-10-27 17:57-0300\n"
+"PO-Revision-Date: 2015-10-28 18:13-0300\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -556,20 +556,25 @@ msgid ""
 "Since the last handler with a given argument name is used, in this example "
 "the stand-alone option ``-b`` is masked by the alias for ``--long-b``."
 msgstr ""
+"Desde el último controlador con un nombre argumento dado es utilizado, en "
+"este ejemplo la opción independiente ``-b`` está enmascarado por el alias "
+"de ``--long-b``."
 
 #: ../../PyMOTW/argparse/index.rst:602
 msgid ""
 "Switching the order of the calls to :func:`add_argument` unmasks the stand-"
 "alone option:"
 msgstr ""
+"Cambiando el orden de las llamadas a :func:`add_argument` desenmascara la "
+"opción independiente:"
 
 #: ../../PyMOTW/argparse/index.rst:609
 msgid "Now both options can be used together."
-msgstr ""
+msgstr "Ahora ambas opciones se pueden utilizar juntas."
 
 #: ../../PyMOTW/argparse/index.rst:631
 msgid "Argument Groups"
-msgstr ""
+msgstr "Grupos de argumentos"
 
 #: ../../PyMOTW/argparse/index.rst:633
 msgid ""
@@ -577,12 +582,17 @@ msgid ""
 "default, it uses two groups, with one for options and another for required "
 "position-based arguments."
 msgstr ""
+":mod:`argparse` combina las definiciones de argumentos en\" grupos \". Por "
+"defecto, se utiliza dos grupos, uno para las opciones y otra para los "
+"argumentos basados en la posición deseada."
 
 #: ../../PyMOTW/argparse/index.rst:641
 msgid ""
 "The grouping is reflected in the separate \"positional arguments\" and "
 "\"optional arguments\" section of the help output:"
 msgstr ""
+"La agrupación se refleja en los \"argumentos posicionales\" y \"argumentos "
+"opcionales\" separadas de la sección de salida de la ayuda:"
 
 #: ../../PyMOTW/argparse/index.rst:665
 msgid ""
@@ -591,6 +601,10 @@ msgid ""
 "example from earlier could be written using custom grouping so that the "
 "authentication options are shown together in the help."
 msgstr ""
+"Se puede ajustar la agrupación para que sea más lógico en la ayuda, por lo "
+"que las opciones o valores relacionados se documentan juntos. El ejemplo de "
+"la opción compartida podría escribirse usando agrupación personalizada para "
+"que las opciones de autenticación se muestren juntos en la ayuda."
 
 #: ../../PyMOTW/argparse/index.rst:671
 msgid ""
@@ -598,20 +612,26 @@ msgid ""
 "then add each of the authentication-related options to the group, instead "
 "of the base parser."
 msgstr ""
+"Cree el grupo de \"autenticación\" con :func:`add_argument_group` y luego "
+"añada cada una de las opciones relacionadas con la autenticación al grupo, "
+"en lugar del analizador base."
 
 #: ../../PyMOTW/argparse/index.rst:679
 msgid ""
 "The program using the group-based parent lists it in the *parents* value, "
 "just as before."
 msgstr ""
+"El programa usando el grupo basado en padres enumera los valores en "
+"*padres*, al igual que antes."
 
 #: ../../PyMOTW/argparse/index.rst:686
 msgid "The help output now shows the authentication options together."
 msgstr ""
+"Ahora la salida muestra la ayuda de las opciones de autenticación juntos."
 
 #: ../../PyMOTW/argparse/index.rst:710
 msgid "Mutually Exclusive Options"
-msgstr ""
+msgstr "Opciones mutuamente excluyentes"
 
 #: ../../PyMOTW/argparse/index.rst:712
 msgid ""
@@ -619,16 +639,21 @@ msgid ""
 "grouping feature, and uses :func:`add_mutually_exclusive_group` instead of :"
 "func:`add_argument_group`."
 msgstr ""
+"Definición de opciones mutuamente excluyentes, es un caso especial de la "
+"función de la opción de agrupación, y utiliza :func:"
+"`add_mutually_exclusive_group` en lugar de :func:` add_argument_group`."
 
 #: ../../PyMOTW/argparse/index.rst:720
 msgid ""
 ":mod:`argparse` enforces the mutal exclusivity for you, so that only one of "
 "the options from the group can be given."
 msgstr ""
+":mod: `argparse` hace cumplir la exclusividad mutua para usted, por lo que "
+"sólo una de las opciones del grupo se pueden dar."
 
 #: ../../PyMOTW/argparse/index.rst:757
 msgid "Nesting Parsers"
-msgstr ""
+msgstr "Analizadores de la jerarquización"
 
 #: ../../PyMOTW/argparse/index.rst:759
 msgid ""
@@ -638,24 +663,37 @@ msgid ""
 "command line.  The result works in the way ``svn``, ``hg``, and other "
 "programs with multiple command line actions, or sub-commands, does."
 msgstr ""
+"El enfoque parser matriz descrito anteriormente es una forma de compartir "
+"las opciones entre comandos relacionados. Un enfoque alternativo es "
+"combinar los comandos en un solo programa, y utilizar subparsers para "
+"manejar cada parte de la línea de comandos. El resultado funciona de la "
+"forma que lo hace ``svn``, `` hg``, y otros programas con múltiples "
+"acciones de línea de comandos, o sub-comandos."
 
 #: ../../PyMOTW/argparse/index.rst:766
 msgid ""
 "A program to work with directories on the filesystem might define commands "
 "for creating, deleting, and listing the contents of a directory like this:"
 msgstr ""
+"Un programa para trabajar con directorios en el sistema de archivos podría "
+"definir comandos para crear, eliminar y listar el contenido de un "
+"directorio de la siguiente manera:"
 
 #: ../../PyMOTW/argparse/index.rst:774
 msgid ""
 "The help output shows the named subparsers as \"commands\" that can be "
 "specified on the command line as positional arguments."
 msgstr ""
+"La salida de ayuda muestra los subparsers nombrados como \"comandos\" que "
+"se pueden especificar en la línea de comandos como argumentos posicionales."
 
 #: ../../PyMOTW/argparse/index.rst:798
 msgid ""
 "Each subparser also has its own help, describing the arguments and options "
 "for that command."
 msgstr ""
+"Cada subparser también tiene su propia ayuda, que describe los argumentos y "
+"opciones para ese comando."
 
 #: ../../PyMOTW/argparse/index.rst:820
 msgid ""
@@ -663,10 +701,13 @@ msgid ""
 "by :func:`parse_args` includes only the values related to the command "
 "specified."
 msgstr ""
+"Y cuando se analizan los argumentos, el objeto :class:`Namespace` devuelto "
+"por :func:` parse_args` incluye sólo los valores relacionados con el "
+"comando especificado."
 
 #: ../../PyMOTW/argparse/index.rst:838
 msgid "Advanced Argument Processing"
-msgstr ""
+msgstr "Procesamiento de Argumento Avanzado"
 
 #: ../../PyMOTW/argparse/index.rst:840
 msgid ""
@@ -675,10 +716,14 @@ msgid ""
 "sophisticated argument specification for variable-length argument list, "
 "enumerations, and constant values as well."
 msgstr ""
+"Los ejemplos hasta ahora han mostrado banderas booleanas simples y opciones "
+"con cadenas o argumentos numéricos, y los argumentos posicionales. :mod:"
+"`argparse` soporta especificación sofisticada de argumentos para longitud "
+"variable de lista de argumentos, enumeraciones y valores constantes también."
 
 #: ../../PyMOTW/argparse/index.rst:847
 msgid "Variable Argument Lists"
-msgstr ""
+msgstr "Listas de argumentos variables"
 
 #: ../../PyMOTW/argparse/index.rst:849
 msgid ""
@@ -686,56 +731,63 @@ msgid ""
 "on the command line being parsed.  Set *nargs* to one of these flag values, "
 "based on the number of required or expected arguments:"
 msgstr ""
+"Puede configurar una única definición argumentos para consumir varios "
+"argumentos en la línea de comandos que se analizan. Establecer *nargs * "
+"hacia uno de estos valores de la bandera, basado en el número de argumentos "
+"requeridos o esperados:"
 
 #: ../../PyMOTW/argparse/index.rst:855
 msgid "Value"
-msgstr ""
+msgstr "Valor"
 
 #: ../../PyMOTW/argparse/index.rst:855
 msgid "Meaning"
-msgstr ""
+msgstr "Significado"
 
 #: ../../PyMOTW/argparse/index.rst:857
 msgid "``N``"
-msgstr ""
+msgstr "``N``"
 
 #: ../../PyMOTW/argparse/index.rst:857
 msgid "The absolute number of arguments (e.g., ``3``)."
-msgstr ""
+msgstr "El número absoluto de argumentos (por ejemplo, `` 3``)."
 
 #: ../../PyMOTW/argparse/index.rst:858
 msgid "``?``"
-msgstr ""
+msgstr "``?``"
 
 #: ../../PyMOTW/argparse/index.rst:858
 msgid "0 or 1 arguments"
-msgstr ""
+msgstr "Argumentos 0 o 1"
 
 #: ../../PyMOTW/argparse/index.rst:859
 msgid "``*``"
-msgstr ""
+msgstr "``*``"
 
 #: ../../PyMOTW/argparse/index.rst:859
 msgid "0 or all arguments"
-msgstr ""
+msgstr "0 o todos los argumentos"
 
 #: ../../PyMOTW/argparse/index.rst:860
 msgid "``+``"
-msgstr ""
+msgstr "``+``"
 
 #: ../../PyMOTW/argparse/index.rst:860
 msgid "All, and at least one, argument"
-msgstr ""
+msgstr "Todos, y al menos un argumento"
 
 #: ../../PyMOTW/argparse/index.rst:867
 msgid ""
 "The parser enforces the argument count instructions, and generates an "
 "accurate syntax diagram as part of the command help text."
 msgstr ""
+"El analizador hace cumplir las instrucciones de conteo de argumento, y "
+"genera un diagrama de sintaxis preciso como parte del texto de ayuda del "
+"comando."
 
 #: ../../PyMOTW/argparse/index.rst:943
 msgid "Argument Types"
-msgstr ""
+msgstr "Tipos de argumentos"
 
 #: ../../PyMOTW/argparse/index.rst:945
 msgid ""
@@ -745,12 +797,20 @@ msgid ""
 "`ArgumentParser` to transform the argument value from a string to some "
 "other type."
 msgstr ""
+":mod:`argparse` trata todos los valores de los argumentos como cadenas, a "
+"menos que usted le indique para convertir la cadena a otro tipo. El "
+"parámetro *tipo* :func: `add_argument` espera una función de conversión "
+"utilizada por :class:`ArgumentParser` para transformar el valor del "
+"argumento de una cadena a algún otro tipo."
 
 #: ../../PyMOTW/argparse/index.rst:955
 msgid ""
 "Any callable that takes a single string argument can be passed as *type*, "
 "including built-in types like :func:`int`, :func:`float`, and :func:`file`."
 msgstr ""
+"Cualquier exigible que toma un solo argumento de cadena se puede pasar como "
+"*tipo*, que incluye tipos integrados como :func:`int`, :func:` float` y :"
+"func: `File`."
 
 #: ../../PyMOTW/argparse/index.rst:981
 msgid ""
@@ -761,22 +821,32 @@ msgid ""
 "<exceptions-IOError>` in the example below where the input file does not "
 "exist, must be handled by the caller."
 msgstr ""
+"Si la conversión de tipo de falla, mod:`argparse` lanza una excepción. :ref:"
+"`TypeError <exceptions-TypeError>` y :ref:`ValueError <exceptions-"
+"ValueError>` excepciones son atrapadas de forma automática y se convierten "
+"en un mensaje de error simple para el usuario. Otras excepciones, como :ref:"
+"`IOError <exceptions-IOError>` en el siguiente ejemplo, donde no existe el "
+"archivo de entrada, deben ser manejadas por la persona que llama."
 
 #: ../../PyMOTW/argparse/index.rst:1013
 msgid ""
 "To limit an input argument to a value within a pre-defined set, use the "
 "*choices* parameter."
 msgstr ""
+"Para limitar un argumento de entrada a un valor dentro de un conjunto "
+"predefinido, utilice parámetros *opciones *."
 
 #: ../../PyMOTW/argparse/index.rst:1020
 msgid ""
 "If the argument to ``--mode`` is not one of the allowed values, an error is "
 "generated and processing stops."
 msgstr ""
+"Si el argumento ``--mode`` no es uno de los valores permitidos, se genera "
+"un error y el proceso se detiene."
 
 #: ../../PyMOTW/argparse/index.rst:1052
 msgid "File Arguments"
-msgstr ""
+msgstr "Argumentos de archivos"
 
 #: ../../PyMOTW/argparse/index.rst:1054
 msgid ""
@@ -785,16 +855,23 @@ msgid ""
 "`FileType` gives you a more flexible way of specifying that an argument "
 "should be a file, including the mode and buffer size."
 msgstr ""
+"Aunque objetos de :class:`File` pueden crear instancias con un único "
+"argumento de cadena, que no le permiten especificar el modo de acceso. :"
+"class:`FileType` le da una forma más flexible de especificar que un "
+"argumento debe ser un archivo, incluyendo el tamaño y el modo de búfer."
 
 #: ../../PyMOTW/argparse/index.rst:1063
 msgid ""
 "The value associated with the argument name is the open file handle. You "
 "are responsible for closing the file yourself when you are done with it."
 msgstr ""
+"El valor asociado con el nombre de argumento es el identificador de archivo "
+"abierto. Usted es responsable de cerrar el archivo cuando haya terminado "
+"con él."
 
 #: ../../PyMOTW/argparse/index.rst:1099
 msgid "Custom Actions"
-msgstr ""
+msgstr "Acciones personalizadas"
 
 #: ../../PyMOTW/argparse/index.rst:1101
 msgid ""
@@ -807,6 +884,15 @@ msgid ""
 "results, the *value* of the argument being acted on, and the "
 "*option_string* that triggered the action."
 msgstr ""
+"Además de las acciones integradas descritas anteriormente, se pueden "
+"definir acciones personalizadas, proporcionando un objeto que implementa la "
+"API de Acción. El objeto pasado a :func:`add_argument` como *acción* "
+"debería tomar parámetros que describen el argumento que se definen (todos "
+"los mismos argumentos dados a :func:`add_argument`) y devuelven un objeto "
+"invocable que toma como parámetros el *parser* procesando los argumentos, "
+"el *espacio de nombres* sosteniendo los resultados de análisis sintáctico, "
+"el *valor* del argumento que se actúa en el *option_string* que desencadenó "
+"la acción."
 
 #: ../../PyMOTW/argparse/index.rst:1110
 msgid ""
@@ -814,6 +900,10 @@ msgid ""
 "defining new actions.  The constructor handles the argument definitions, so "
 "you only need to override :func:`__call__` in the subclass."
 msgstr ""
+"Una clase :class:`action` se ofrece como un punto de partida para la "
+"definición de nuevas acciones. El constructor se encarga de las "
+"definiciones de argumentos, por lo que sólo necesita sobrescribir :func:"
+"`__call__` en la subclase."
 
 #: ../../PyMOTW/argparse/index.rst:1119
 msgid ""
@@ -821,6 +911,9 @@ msgid ""
 "allows multiple values, *values* will be a list even if it only contains "
 "one item."
 msgstr ""
+"El tipo de *valores* depende del valor de *nargs *. Si el argumento permite "
+"múltiples valores, los *valores* serán una lista, incluso si sólo contiene "
+"un elemento."
 
 #: ../../PyMOTW/argparse/index.rst:1123
 msgid ""
@@ -828,18 +921,21 @@ msgid ""
 "specifiation.  For positional, required, arguments, *option_string* is "
 "always ``None``."
 msgstr ""
+"El valor de *option_string* también depende de la especificación original "
+"del argumento. Para posicional, se requiere, argumentos, *option_string* "
+"siempre es ``None``."
 
 #: ../../PyMOTW/argparse/index.rst:1168
 msgid "`argparse <http://docs.python.org/library/argparse.html>`_"
-msgstr ""
+msgstr "`argparse <http://docs.python.org/library/argparse.html>`_"
 
 #: ../../PyMOTW/argparse/index.rst:1168
 msgid "The standard library documentation for this module."
-msgstr ""
+msgstr "La documentación de la biblioteca estándar para este módulo."
 
 #: ../../PyMOTW/argparse/index.rst:1173
 msgid "`original argparse <http://pypi.python.org/pypi/argparse>`__"
-msgstr ""
+msgstr "`original argparse <http://pypi.python.org/pypi/argparse>`__"
 
 #: ../../PyMOTW/argparse/index.rst:1171
 msgid ""
@@ -847,11 +943,14 @@ msgid ""
 "libary.  This version is compatible with older versions of Python, and can "
 "be installed separately."
 msgstr ""
+"La página PyPI para la versión de argparse desde fuera de la biblioteca "
+"estándar. Esta versión es compatible con las versiones anteriores de "
+"Python, y se puede instalar por separado."
 
 #: ../../PyMOTW/argparse/index.rst:1175
 msgid ":mod:`ConfigParser`"
-msgstr ""
+msgstr ":mod:`ConfigParser`"
 
 #: ../../PyMOTW/argparse/index.rst:1176
 msgid "Read and write configuration files."
-msgstr ""
+msgstr "Leer y escribir archivos de configuración."
