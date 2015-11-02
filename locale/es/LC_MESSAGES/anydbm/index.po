@@ -4,61 +4,74 @@ msgstr ""
 "Project-Id-Version: Python Module of the Week 2.1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-06 13:35-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2015-11-02 18:01-0300\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_AR\n"
+"X-Generator: Poedit 1.8.6\n"
 
 #: ../../PyMOTW/anydbm/index.rst:3
 msgid "anydbm -- Access to DBM-style databases"
-msgstr ""
+msgstr "anydbm -- Acceso a las bases de datos de estilo DBM"
 
 #: ../../PyMOTW/anydbm/index.rst:8
 msgid ""
 "anydbm provides a generic dictionary-like interface to DBM-style, string-"
 "keyed databases"
 msgstr ""
+"anydbm ofrece una interfaz genérica similar a un diccionario de estilo DBM, "
+"base de datos clave-cadena"
 
 #: ../../PyMOTW/anydbm/index.rst:9
 msgid "1.4 and later"
-msgstr ""
+msgstr "1.4 o posterior"
 
 #: ../../PyMOTW/anydbm/index.rst:11
 msgid ""
 "anydbm is a front-end for DBM-style databases that use simple string values "
 "as keys to access records containing strings.  It uses the :mod:`whichdb` "
 "module to identify :mod:`dbhash`, :mod:`gdbm`, and :mod:`dbm` databases, "
-"then opens them with the appropriate module.  It is used as a backend for "
-":mod:`shelve`, which knows how to store objects using :mod:`pickle`."
+"then opens them with the appropriate module.  It is used as a backend for :"
+"mod:`shelve`, which knows how to store objects using :mod:`pickle`."
 msgstr ""
+"anydbm es un front-end para las bases de datos al estilo de DBM que "
+"utilizan valores de cadenas simples como claves para acceder a los "
+"registros que contienen cadenas. Utiliza el módulo :mod:`whichdb` para "
+"identificar :mod:` dbhash`, :mod:`gdbm`  y base de datos :mod:`dbm`, luego "
+"los abre con el módulo correspondiente. Se utiliza como un backend para :"
+"mod:`shelve`, que sabe cómo almacenar objetos usando :mod:`pickle`."
 
 #: ../../PyMOTW/anydbm/index.rst:19
 msgid "Creating a New Database"
-msgstr ""
+msgstr "Creando una base de datos"
 
 #: ../../PyMOTW/anydbm/index.rst:21
 msgid ""
 "The storage format for new databases is selected by looking for each of "
 "these modules in order:"
 msgstr ""
+"El formato de almacenamiento para nuevas bases de datos se selecciona "
+"mediante la búsqueda de cada uno de estos módulos con el fin de:"
 
 #: ../../PyMOTW/anydbm/index.rst:24
 msgid ":mod:`dbhash`"
-msgstr ""
+msgstr ":mod:`dbhash`"
 
 #: ../../PyMOTW/anydbm/index.rst:25
 msgid ":mod:`gdbm`"
-msgstr ""
+msgstr ":mod:`gdbm`"
 
 #: ../../PyMOTW/anydbm/index.rst:26
 msgid ":mod:`dbm`"
-msgstr ""
+msgstr ":mod:`dbm`"
 
 #: ../../PyMOTW/anydbm/index.rst:27
 msgid ":mod:`dumbdbm`"
-msgstr ""
+msgstr ":mod:`dumbdbm`"
 
 #: ../../PyMOTW/anydbm/index.rst:29
 msgid ""
@@ -66,22 +79,30 @@ msgid ""
 "managed.  To create a new database when necessary, use ``'c'``.  To always "
 "create a new database, use ``'n'``."
 msgstr ""
+"La función :func:`open` toma *banderas* para controlar como se gestiona el "
+"archivo de base de datos.  Para crear una nueva base de datos cuando sea "
+"necesario, use ``'c'``.  Para crear siempre una nueva base de datos, use "
+"``'n'``."
 
 #: ../../PyMOTW/anydbm/index.rst:51
 msgid ""
 "In this example, the file is always re-initialized.  To see what type of "
 "database was created, we can use :mod:`whichdb`."
 msgstr ""
+"En este ejemplo, siempre se re-inicializa el archivo. Para ver qué tipo de "
+"base de datos fue creada, podemos utilizar :mod:`whichdb`."
 
 #: ../../PyMOTW/anydbm/index.rst:58
 msgid ""
 "Your results may vary, depending on what modules are installed on your "
 "system."
 msgstr ""
+"Sus resultados pueden variar, dependiendo de lo que los módulos están "
+"instalados en su sistema."
 
 #: ../../PyMOTW/anydbm/index.rst:75
 msgid "Opening an Existing Database"
-msgstr ""
+msgstr "Abrir una base de datos existente"
 
 #: ../../PyMOTW/anydbm/index.rst:77
 msgid ""
@@ -91,58 +112,72 @@ msgid ""
 "identify.  If a file can be identified, the appropriate module is used to "
 "open it."
 msgstr ""
+"Para abrir una base de datos existente, utilice cualquiera de estas "
+"*banderas* '''r'`` (para sólo lectura) o ``'w'`` (para lectura-escritura). "
+"Usted no necesita preocuparse por el formato, ya que las bases de datos "
+"existentes le dan automáticamente a :mod:`whichdb` la forma de identificar. "
+"Si un archivo puede ser identificado, el módulo adecuado se utiliza para "
+"abrirlo."
 
 #: ../../PyMOTW/anydbm/index.rst:87
 msgid ""
 "Once open, ``db`` is a dictionary-like object, with support for the usual "
 "methods:"
 msgstr ""
+"Una vez abierta, ``db`` es un objeto similar a un diccionario, con soporte "
+"para los métodos habituales:"
 
 #: ../../PyMOTW/anydbm/index.rst:107
 msgid "Error Cases"
-msgstr ""
+msgstr "Los casos de error"
 
 #: ../../PyMOTW/anydbm/index.rst:109
 msgid "The keys of the database need to be strings."
-msgstr ""
+msgstr "Las claves de la base de datos deben ser cadenas."
 
 #: ../../PyMOTW/anydbm/index.rst:115
 msgid ""
 "Passing another type results in a :ref:`TypeError <exceptions-TypeError>`."
 msgstr ""
+"Pasar a otro tipo de resultados en un :ref: `TypeError <exceptions-"
+"TypeError>`."
 
 #: ../../PyMOTW/anydbm/index.rst:130
 msgid "Values must be strings or ``None``."
-msgstr ""
+msgstr "Los valores deben ser cadenas o `` None``."
 
 #: ../../PyMOTW/anydbm/index.rst:136
 msgid ""
 "A similar :ref:`TypeError <exceptions-TypeError>` is raised if a value is "
 "not a string."
 msgstr ""
+"Un error :ref:`TypeError <expetioins-TypeError>` se eleva si un valor no es "
+"una cadena."
 
 #: ../../PyMOTW/anydbm/index.rst:154
 msgid "Module :mod:`shelve`"
-msgstr ""
+msgstr "Modulo :mod:`shelve`"
 
 #: ../../PyMOTW/anydbm/index.rst:154
 msgid ""
 "Examples for the :mod:`shelve` module, which uses :mod:`anydbm` to store "
 "data."
 msgstr ""
+"Ejemplos para el :mod:`módulo shelve`, que utiliza :mod:`anydbm` para "
+"almacenar datos."
 
 #: ../../PyMOTW/anydbm/index.rst:157
 msgid "`anydbm <http://docs.python.org/library/anydbm.html>`_"
-msgstr ""
+msgstr "`anydbm <http://docs.python.org/library/anydbm.html>`_"
 
 #: ../../PyMOTW/anydbm/index.rst:157
 msgid "The standard library documentation for this module."
-msgstr ""
+msgstr "La documentación de la biblioteca estándar para este módulo."
 
 #: ../../PyMOTW/anydbm/index.rst:159
 msgid ":ref:`article-data-persistence`"
-msgstr ""
+msgstr ":ref:`article-data-persistence`"
 
 #: ../../PyMOTW/anydbm/index.rst:160
 msgid "Descriptions of other modules for storing data."
-msgstr ""
+msgstr "Descripciones de otros módulos para el almacenamiento de datos."
